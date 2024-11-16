@@ -83,7 +83,7 @@ html,body {
 p {
     font-size: 1rem;
     place-self: center;
-    width: 100%;
+    width: calc(100% - (3rem));
     width: clamp(45ch,60%,75ch);
 }
 a {
