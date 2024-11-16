@@ -247,11 +247,7 @@ main > article {
     flex-direction: column;
 }
 
-@media (min-width: 500px) and (orientation: portrait) {
-    html {
-        font-size: 2.2rem;
-    }
-}
+
 
 
 @media (min-width: 768px) and (orientation: landscape) {
@@ -281,6 +277,8 @@ main > article {
     }
     p {
         font-size: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     #navToggle {
         display: none;
@@ -295,5 +293,11 @@ main > article {
         font-weight: 600;
         letter-spacing: unset;
         text-transform: unset;
+    }
+}
+
+@media (max-width: 400px) and (orientation: portrait) {
+    html {
+        font-size: 2.2rem;
     }
 }
