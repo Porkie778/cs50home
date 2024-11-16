@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="./styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c21b7427e3.js" crossorigin="anonymous"></script>
+        <title>Notes</title>
+    </head>
+    <body>
+        <!-- NAVIGATION BAR -->
+        <div class="nav-container">
+            <button id="navToggle" class="btn">CLOSE</button>
+            <nav>
+                <a href="./index.html">
+                    <button class="btn btn-light">Home</button>
+                </a>
+                <a href="./about.html">
+                    <button class="btn btn-light">About Me</button>
+                </a>
+                <a href="./notes.html">
+                    <button class="btn btn-primary">Notes</button>
+                </a>
+                <a href="./history.html">
+                    <button class="btn btn-light">History</button>
+                </a>
+            </nav>
+        </div>
+        <div class="hero-section">
+            <h1>Notes</h1>
+        </div>
+        <main class="notes">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ciz2UaifaNM?si=bo7gbirDSL1H1IUF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2>HTML</h2>
+            <p>
+                <strong>HTML Structure and Tags</strong><br/>
+                HTML, or Hypertext Markup Language, structures web content with tags. Essential tags include <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, and <code>&lt;body&gt;</code>. Tags like <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> represent headers, while <code>&lt;p&gt;</code> denotes paragraphs.
+            </p>
+            <p>
+                <strong>Attributes</strong><br>
+                Tags may have attributes to provide additional information, such as <code>lang="en"</code> in <code>&lt;html&gt;</code>. Attributes are used to specify details about elements.
+            </p>
+            <p>
+                <strong>Hierarchy</strong><br>
+                HTML tags create a nested structure that helps browsers interpret content organization. Correct hierarchy and nesting of tags are essential for proper display and SEO.</p>
+            <h2>CSS</h2>
+            <p>
+                <strong>Selectors and Properties</strong><br>
+                CSS, or Cascading Style Sheets, controls styling and layout. Basic selectors like <code>id</code> and <code>class</code> allow applying styles to elements, while properties like <code>color</code>, <code>font-size</code>, and <code>margin</code> define visual presentation.
+            </p>
+
+            <p>
+                <strong>Box Model</strong><br>
+                CSS uses the box model, where each element is considered a box comprising margins, borders, padding, and the content area. Adjusting these properties is essential for layout control.
+            </p>
+            <p>
+                <strong>Frameworks</strong><br>
+                Frameworks like Bootstrap simplify design by offering pre-styled components and grids, reducing the need to write extensive CSS.
+            </p>
+
+            <h2>JavaScript</h2>
+            <p>
+                <strong>Variables, Conditionals, and Loops</strong><br>
+                JavaScript adds interactivity. Variables store data, conditionals (<code>if-else</code>) control flow, and loops (<code>for</code>, <code>while</code>) execute repetitive tasks.
+            </p>
+            <p>
+                <strong>DOM Manipulation</strong><br>
+                JavaScript accesses and modifies the Document Object Model (DOM) to dynamically update page content. Functions like <code>document.querySelector()</code> target elements, while events such as <code>click</code> trigger responses to user actions.
+            </p>
+            <p>
+                <strong>Events</strong><br>
+                Event listeners (<code>addEventListener</code>) detect user actions, enabling interactive experiences, like responding to button clicks or form submissions.
+            </p>
+            <p>
+                For more details, please refer to the <a href="https://cs50.harvard.edu/x/2024/notes/8/" target="_blank">CS50 Week 8 Notes</a>.
+            </p>
+        </main>
+
+
+        <footer>
+            <div class="footerLinks">
+                <section class="footerSection">
+                    <div><h4>CS50 Tools</h4></div>
+                    <div><a target="_blank" href="https://www.harvard.edu/">Harvard</a></div>
+                    <div><a target="_blank" href="https://cs50.dev/">Visual Studio Code</a></div>
+                    <div><a target="_blank" href="https://manual.cs50.io/">C Documentation</a></div>
+                </section>
+                <section class="footerSection">
+                    <div><h4>Developer Tools</h4></div>
+                    <div><a target="_blank" href="https://github.com/"><i class="fa-brands fa-github"></i> Github</a></div>
+                    <div><a target="_blank" href="https://codepen.io/trending"><i class="fa-brands fa-codepen"></i> Codepen</a></div>
+                    <div><a target="_blank" href="https://daily.dev/"><img src="./images/Dailydev Logo.svg" style="display: inline-block;height: 0.7rem;" alt="Daily.dev logo"> Daily.dev</a></div>
+                </section>
+                <section class="footerSection">
+                    <div><h4>Social Media</h4></div>
+                    <div><a target="_blank" href="https://www.instagram.com/harvardeducation/?hl=en"><i class="fa-brands fa-instagram"></i> Instagram</a></div>
+                    <div><a target="_blank" href="https://x.com/hgse"><i class="fa-brands fa-x-twitter"></i> (formerly Twitter)</a></div>
+                    <div><a target="_blank" href="https://www.youtube.com/user/HarvardEducation"><i class="fa-brands fa-youtube"></i> Youtube</a></div>
+                </section>
+            </div>
+            <p style="text-align: center;margin-top: 1rem;padding-top: 1rem;font-size: 0.7rem;">Copyright © 2024</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptas optio reiciendis tenetur totam, sed nisi veniam voluptatibus sunt reprehenderit!</p> -->
+        </footer>
+    </body>
+    <script src="./main.js"></script>
+</html>

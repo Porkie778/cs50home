@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+}
+
+iframe {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: 100%;
+
+}
+:root {
+    --harvard: rgb(165, 28, 48);
+    --harvard-hover: rgb(129, 23, 39);
+    --harvard-hover-highlight: rgba(129, 23, 39,0.25);
+    
+    font-family: 'Work Sans',sans-serif;
+}
+.harvard-logo {
+    padding: 1rem;
+    margin: 1rem auto;
+    align-self: center;
+    min-width: 50vw;
+    max-width: 5rem;
+}
+
+
+
+
+/* ========= BOOTSTRAP OVERRIDES ========= */
+
+/* ========= buttons ========= */
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border: var(--harvard);
+    background-color: var(--harvard);
+    outline: none;
+}
+.btn-primary:hover {
+    background-color: var(--harvard-hover);
+}
+
+/* ========= accordions ========= */
+
+.accordion {
+    margin-bottom: 4rem;
+    width: 100%;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f3f4f4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-active-color: #f3f4f4;
+    --bs-accordion-btn-focus-border-color: none;
+    --bs-accordion-btn-focus-box-shadow: none;
+}
+
+.accordion-body p {
+    margin-left: 0.5rem;
+}
+
+.accordion-button[aria-expanded="true"] {
+    color: #f3f4f4;
+    background-color: var(--harvard);
+}
+
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========= Tags ========= */
+html,body {
+    height: 100%;
+    width: 100%;
+}
+p {
+    font-size: 1rem;
+    place-self: center;
+    width: 100%;
+    width: clamp(45ch,60%,75ch);
+}
+a {
+    color: var(--harvard);
+    transition: color 200ms;
+    font-weight: 600;
+}
+
+footer {
+    margin-top:5rem;
+}
+a:hover {
+    color: var(--harvard-hover);
+}
+
+/* ========= Navigation Bar ========= */
+
+.nav-container {
+    width: 100%;
+    position: absolute;
+}
+nav {
+    visibility: hidden;
+    height: 0;
+    background-color: var(--bs-primary-bg-subtle);
+    width:100%;
+}
+nav > a{
+    text-decoration: none;
+    color: var(--bs-body-color);
+}
+nav > a > button {
+    font-size: clamp(1rem, 3rem) !important;
+    width:100%;
+}
+
+nav > * > .btn {
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+#navToggle {
+    color: #f3f4f4;
+    background-color: #0e0e0e;
+    width:100%;
+    font-size:1.2rem;
+}
+
+/* ========= Hero Section ========= */
+
+
+div.hero-section {
+    min-height: 100vh;
+    width:100%;
+    background-image: url('./images/091520_Stock_KS_025.webp');
+    background-size: cover;
+    background-position: center center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:4rem;
+}
+
+div.hero-section h1 {
+    max-width: 60%;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    margin: auto 10%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 2rem;
+    border-radius: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.055);
+    font-size: clamp(4rem,10vw,5rem);
+    color: #f3f4f4;
+    font-family: 'Merriweather', serif;
+}
+
+/* ========= Main Body ========= */
+
+.profile-image-container {
+    /* box-shadow: 3px 2px 6px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    background-color: var(--harvard-hover);
+    border-radius: 50%;
+    margin: 2rem;
+}
+
+.profile-image-container > img {
+    width: 100%;
+    margin: 0.5rem;
+    border-radius: 50%;
+    filter: brightness(90%);
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main.notes {
+    flex-direction: column;
+}
+/* ========= FOOTER ========= */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f3f4f4;
+    background-color: var(--harvard);
+
+}
+
+.footerLinks {
+    padding-top: 1.5rem;
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px;
+    width: 100%;
+}
+
+.footerLinks > .footerSection {
+    text-align: center;
+    width: 100%;
+    color:#f3f4f4;
+    margin:auto 1rem;
+    place-self: center;
+}
+
+.footerSection> div > h4 {
+    text-decoration:underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-thickness: 2px;
+    padding-top: 1rem;
+    font-weight: 1000;
+    letter-spacing: 0.5vw;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.footerSection > div {
+
+    margin-bottom: 1rem;
+}
+
+.footerSection > div > a {
+    color:#f3f4f4;
+}
+
+
+
+
+main > article {
+    display:flex;
+    flex-direction: column;
+}
+
+@media (min-width: 500px) and (orientation: portrait) {
+    html {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media (min-width: 768px) and (orientation: landscape) {
+    html {
+        font-size: 16px;
+    }
+    iframe {
+        width: 50%;
+    }
+    .btn {
+        border-radius: 0.25rem;
+    }
+    .accordion {
+        width: 70%;
+    }
+    nav {
+        visibility: visible;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+    }
+    nav > a {
+        margin: 0.25rem 0.5rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    #navToggle {
+        display: none;
+    }
+
+    .footerLinks {
+        flex-direction: row;
+    }
+    .footerSection > div > h4 {
+        text-decoration:overline underline;
+        padding-top: auto;
+        font-weight: 600;
+        letter-spacing: unset;
+        text-transform: unset;
+    }
+}
