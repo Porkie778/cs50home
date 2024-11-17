@@ -5,7 +5,7 @@
     margin: 0;
 }
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 iframe {
@@ -53,6 +53,7 @@ iframe {
 .accordion {
     margin-bottom: 4rem;
     width: 100%;
+    width: clamp();
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f3f4f4'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     --bs-accordion-active-color: #f3f4f4;
     --bs-accordion-btn-focus-border-color: none;
@@ -82,6 +83,7 @@ html,body {
 }
 p {
     font-size: 1rem;
+	line-height: 1.6rem;
     place-self: center;
     width: calc(100% - (3rem));
 }
@@ -115,11 +117,12 @@ nav > a{
     color: var(--bs-body-color);
 }
 nav > a > button {
-    font-size: clamp(1rem, 3rem) !important;
+	font-size: 1rem;
     width:100%;
 }
 
 nav > * > .btn {
+	font-size: 1.5rem;
     box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -127,7 +130,7 @@ nav > * > .btn {
     color: #f3f4f4;
     background-color: #0e0e0e;
     width:100%;
-    font-size:1.2rem;
+    font-size:1.5rem;
 }
 
 /* ========= Hero Section ========= */
@@ -148,9 +151,7 @@ div.hero-section {
 div.hero-section h1 {
     max-width: 60%;
     text-align: center;
-    backdrop-filter: blur(8px);
     margin: auto 10%;
-    background-color: rgba(0, 0, 0, 0.1);
     padding: 0.5rem 2rem;
     border-radius: 1.2rem;
     border: 1px solid rgba(255, 255, 255, 0.055);
@@ -181,6 +182,7 @@ div.hero-section h1 {
 }
 
 main {
+	padding: 1em auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,9 +252,12 @@ main > article {
 
 
 @media (min-width: 768px) and (orientation: landscape) {
-
+	html {
+		font-size: 1.2rem;
+	}
     .btn {
         border-radius: 0.25rem;
+		font-size: 1rem;
     }
     .accordion {
         width: 70%;
@@ -269,9 +274,16 @@ main > article {
     nav > a {
         margin: 0.25rem 0.5rem;
     }
+	nav > a > button {
+		font-size: 1rem;
+	}
     #navToggle {
+		font-size: 1rem;
         display: none;
     }
+	.btn {
+		font-size: 1rem;
+	}
 
     .footerLinks {
         flex-direction: row;
