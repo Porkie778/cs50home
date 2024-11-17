@@ -178,7 +178,12 @@ div.hero-section h1 {
     margin: 0.5rem;
     border-radius: 50%;
     filter: brightness(90%);
-    
+
+}
+
+h1 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 main {
@@ -189,7 +194,7 @@ main {
     width: 100%;
 }
 img {
-	max-width: 100%;
+	max-width: 90%;
 }
 
 main.notes {
